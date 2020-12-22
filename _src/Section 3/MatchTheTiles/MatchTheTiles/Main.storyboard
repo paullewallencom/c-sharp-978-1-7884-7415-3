@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="197" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="40" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.996078431372549" green="0.996078431372549" blue="0.0392156862745098" alpha="1"/>
+                                <constraints>
+                                    <constraint id="201" firstItem="197" firstAttribute="height" constant="40"/>
+                                </constraints>
+                            </label>
+                            <view contentMode="scaleToFill" id="202" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="102" width="374" height="360"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                <constraints>
+                                    <constraint id="455" firstItem="202" firstAttribute="height" constant="360"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="207" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="498" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.49803921568627452" green="0" blue="0.49803921568627452" alpha="1"/>
+                                <constraints>
+                                    <constraint id="211" firstItem="207" firstAttribute="height" constant="40"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="212" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="584" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.984313725490196" green="0.00392156862745098" blue="0.023529411764705882" alpha="1"/>
+                                <state key="normal" title="Reset Game">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="216" firstItem="212" firstAttribute="height" constant="40"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="ResetGame_Clicked:" destination="BYZ-38-t0r" id="217" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="198" firstItem="197" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20"/>
+                            <constraint id="199" firstItem="197" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="200" firstItem="197" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="203" firstItem="202" firstAttribute="top" secondItem="197" secondAttribute="bottom" constant="22"/>
+                            <constraint id="205" firstItem="202" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="208" firstItem="207" firstAttribute="top" secondItem="202" secondAttribute="bottom" constant="36"/>
+                            <constraint id="209" firstItem="207" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="213" firstItem="212" firstAttribute="top" secondItem="207" secondAttribute="bottom" constant="46"/>
+                            <constraint id="214" firstItem="212" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="456" firstItem="202" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="911" firstItem="207" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="912" firstItem="212" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="197" id="name-outlet-197"/>
+                        <outlet property="gameBoardView" destination="202" id="name-outlet-202"/>
+                        <outlet property="timeLabel" destination="207" id="name-outlet-207"/>
+                        <outlet property="resetGameButton" destination="212" id="name-outlet-212"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_1.png" width="64" height="64"/>
+        <image name="img_2.png" width="64" height="64"/>
+        <image name="img_3.png" width="64" height="64"/>
+        <image name="img_4.png" width="64" height="64"/>
+        <image name="img_5.png" width="64" height="64"/>
+        <image name="img_6.png" width="64" height="64"/>
+        <image name="img_7.png" width="64" height="64"/>
+        <image name="img_8.png" width="64" height="64"/>
+        <image name="img_9.png" width="64" height="64"/>
+        <image name="front_tile.png" width="64" height="64"/>
+    </resources>
+</document>
